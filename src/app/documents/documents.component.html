@@ -1,0 +1,22 @@
+<div class="container-fluid mt-2">
+    <h4>Documents</h4>
+    <h6>Search Document or Select Category</h6>
+    <div class="row col-sm-12 mt-4">
+        <div class="col-sm-4">
+            <app-categories (selectedCategory)="getSelectedCategory($event)"></app-categories>
+        </div>
+        <div class="col-sm-8">
+            <app-search-documents (documentSearch)="onDocumentSearch($event)"></app-search-documents>
+            <div class="documents-container">
+                <div class="row mt-4">
+                    <div class="col-sm-3 document-block mb-3" *ngFor="let document of documents | documentFilter: searchText">
+                        <div class="document-body">
+                            <span class="badge badge-pill badge-primary">{{document.category}}</span>
+                            <label class="document-title">{{document.name}}</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

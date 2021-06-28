@@ -1,0 +1,20 @@
+.document-block {
+    position: relative;
+}
+.document-body {
+    box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.document-body .document-title {
+    font-size: 14px;
+}
+.document-body .badge {
+    color: #000;
+    background-color: #d1e7dd;
+    font-weight: normal;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    border-radius: 10px;
+}
