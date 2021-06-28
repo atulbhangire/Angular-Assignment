@@ -1,0 +1,5 @@
+<div class="container-fluid">
+    <ul class="nav flex-column nav-pills category-sidebar">
+        <li class="nav-item" *ngFor="let category of categories" [ngClass]="{'active': category.isActive}" (click)="onCategorySelection(category.name)">{{category.name}}</li>
+    </ul>
+</div>

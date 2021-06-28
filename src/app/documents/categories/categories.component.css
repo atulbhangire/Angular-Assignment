@@ -1,0 +1,8 @@
+.category-sidebar .nav-item {
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+}
+.category-sidebar .nav-item.active {
+    font-weight: bold;
+}
